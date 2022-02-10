@@ -1,0 +1,69 @@
+.ui-widget-content {
+  border: 1px solid #a6c9e2;
+  background: #fcfdfd 50% bottom repeat-x;
+  color: #222;
+}
+.ui-widget-header {
+  border: 1px solid #4297d7;
+  background: #5c9ccc 50% 50% repeat-x;
+  color: #fff;
+  font-weight: bold;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #c5dbec;
+  background: #dfeffc 50% 50% repeat-x;
+  font-weight: bold;
+  color: #2e6e9e;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #79b7e7;
+  background: #d0e5f5 50% 50% repeat-x;
+  font-weight: bold;
+  color: #1d5987;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #79b7e7;
+  background: #f5f8f9 50% 50% repeat-x;
+  font-weight: bold;
+  color: #e17009;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #fef1ec 50% 50% repeat-x;
+  color: #cd0a0a;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+  /* background-image: url("images/ui-icons_469bdd_256x240.png"); */
+}
+.ui-widget-header .ui-icon {
+  /* background-image: url("images/ui-icons_d8e7f3_256x240.png"); */
+}
+.ui-state-default .ui-icon {
+  /* background-image: url("images/ui-icons_6da8d5_256x240.png"); */
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+  /* background-image: url("images/ui-icons_217bc0_256x240.png"); */
+}
+.ui-state-active .ui-icon {
+  /* background-image: url("images/ui-icons_f9bd01_256x240.png"); */
+}
+.ui-state-highlight .ui-icon {
+  /* background-image: url("images/ui-icons_2e83ff_256x240.png"); */
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+  /* background-image: url("images/ui-icons_cd0a0a_256x240.png"); */
+}

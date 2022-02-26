@@ -3,6 +3,11 @@
     justify-content: center;
     flex-direction: column;
 }
+.main-qr p{
+   text-align: center;
+}
 .scan-head{
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }

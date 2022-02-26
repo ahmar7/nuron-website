@@ -6968,7 +6968,7 @@ nav.pagination-wrapper .pagination li a:focus {
 .up-plus::after {
   position: absolute;
   content: "\e9b1";
-font-family: 'Plus Jakarta Display', sans-serif;
+font-family: 'Feather';
   top: -9px;
   color: var(--color-primary);
 }
@@ -11576,14 +11576,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .slider-activation-banner-3 button.slick-arrow.slick-prev::before {
   content: "\e92f";
- font-family: 'Plus Jakarta Display', sans-serif;
+font-family: 'Feather';
 }
 .slider-activation-banner-3 button.slick-arrow.slick-next {
   right: 100px;
 }
 .slider-activation-banner-3 button.slick-arrow.slick-next::before {
   content: "\e930";
- font-family: 'Plus Jakarta Display', sans-serif;
+  font-family: "feather" !important;
 }
 
 /*------------------------
@@ -11807,7 +11807,7 @@ input[type="search"]::-webkit-search-results-decoration {
   content: "\e92e";
   position: absolute;
   top: 50%;
- font-family: 'Plus Jakarta Display', sans-serif;
+ font-family: "feather" !important;
   right: -7px;
   transform: translateY(-50%);
 }
@@ -12017,7 +12017,7 @@ span.rn-badge-card::before {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Plus Jakarta Display', sans-serif;
+ font-family: "feather" !important;
 }
 .with-megamenu .nav-link.its_new::after,
 .has-droupdown .nav-link.its_new::after {
@@ -12026,7 +12026,7 @@ span.rn-badge-card::before {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
- font-family: 'Plus Jakarta Display', sans-serif;
+ font-family: "feather" !important;
 }
 
 .popup-mobile-menu {
@@ -13757,7 +13757,7 @@ font-family: "feather" !important;
   position: absolute;
   content: "\e92e";
   top: 10px;
-font-family: 'Plus Jakarta Display', sans-serif;
+ font-family: "feather" !important;
   font-weight: 200;
   right: 35px;
   top: 50%;
@@ -15760,7 +15760,7 @@ button .small-image {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  font-family: 'Plus Jakarta Display', sans-serif;
+font-family: 'Feather';
   z-index: 1;
   color: var(--color-white);
   background: var(--color-primary);

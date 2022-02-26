@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import FeatherIcon from 'feather-icons-react';
 import './style.css'
-
+import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
     const [isHover, setIsHover] = useState(false);
@@ -64,10 +64,10 @@ const banner = () => {
                             <div className="single-slide slick-slide silkk slick-cloned slick-active" style={{ width: '545px' }} role="tabpanel" aria-describedby="slick-slide-control00" aria-hidden="false">
                                 <div className="inner">
                                     <div className="thumbnail">
-                                        <a href="product-details.html"><img src="assets/images/banner/banner-01.jpg" alt="NFT_portfolio" /></a>
+                                        <Link to="/productdetails">   <img src="assets/images/banner/banner-01.jpg" alt="NFT_portfolio" /></Link>
                                     </div>
                                     <div className="banner-read-thumb">
-                                        <h4><a href="product-details.html">Cubic Bazier</a></h4>
+                                        <h4> <Link to="/productdetails">  Cubic Bazier</Link></h4>
                                         <span>John Lee</span>
                                     </div>
                                 </div>
@@ -77,10 +77,10 @@ const banner = () => {
                             <div className="single-slide silkk">
                                 <div className="inner">
                                     <div className="thumbnail">
-                                        <a href="product-details.html"><img src="assets/images/banner/banner-02.jpg" alt="NFT_portfolio" /></a>
+                                        <Link to="/productdetails">  <img src="assets/images/banner/banner-02.jpg" alt="NFT_portfolio" /></Link>
                                     </div>
                                     <div className="banner-read-thumb">
-                                        <h4><a href="product-details.html">Faminho24</a></h4>
+                                        <h4> <Link to="/productdetails">  Faminho24</Link></h4>
                                         <span>Mr.Alamin</span>
                                     </div>
                                 </div>
@@ -90,10 +90,10 @@ const banner = () => {
                             <div className="single-slide silkk">
                                 <div className="inner">
                                     <div className="thumbnail">
-                                        <a href="product-details.html"><img src="assets/images/banner/banner-03.jpg" alt="NFT_portfolio" /></a>
+                                        <Link to="/productdetails">  <img src="assets/images/banner/banner-03.jpg" alt="NFT_portfolio" /></Link>
                                     </div>
                                     <div className="banner-read-thumb">
-                                        <h4><a href="product-details.html">Tzniistan</a></h4>
+                                        <h4> <Link to="/productdetails">  Tzniistan</Link></h4>
                                         <span>Ms.maybin</span>
                                     </div>
                                 </div>
@@ -103,10 +103,10 @@ const banner = () => {
                             <div className="single-slide silkk">
                                 <div className="inner">
                                     <div className="thumbnail">
-                                        <a href="product-details.html"><img src="assets/images/banner/banner-04.jpg" alt="NFT_portfolio" /></a>
+                                        <Link to="/productdetails">  <img src="assets/images/banner/banner-04.jpg" alt="NFT_portfolio" /></Link>
                                     </div>
                                     <div className="banner-read-thumb">
-                                        <h4><a href="product-details.html">Bazier</a></h4>
+                                        <h4> <Link to="/productdetails">  Bazier</Link></h4>
                                         <span>Ms.Dhoni</span>
                                     </div>
                                 </div>

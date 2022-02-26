@@ -98,9 +98,9 @@ const banner = () => {
                                     </div>
                                 </div>
                             </div>
+                            {/* Start Single Portf olio  */}
                             {/* Start Single Portfolio  */}
-                            {/* Start Single Portfolio  */}
-                            <div className="single-slide silkk">
+                            <div className="single-slide silkk " >
                                 <div className="inner">
                                     <div className="thumbnail">
                                         <Link to="/productdetails">  <img src="assets/images/banner/banner-04.jpg" alt="NFT_portfolio" /></Link>

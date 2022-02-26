@@ -1,0 +1,15 @@
+.place-bet-area .left-bid .countdown {
+    justify-content: center;
+}
+@media (max-width:991px) {
+   .product-tab-wrapper .pd-tab-inner {
+    display: flex;
+    margin-left: -10px;
+    justify-content: center;
+}
+}
+@media (max-width:575px) {
+    .place-bet-area .left-bid .countdown {
+    justify-content: flex-start;
+}
+}

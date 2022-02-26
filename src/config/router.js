@@ -21,12 +21,19 @@ import Signup from "../pages/Signup";
 import Support from "../pages/Support";
 import Coming from "../pages/Coming";
 import Productdetails from "../pages/ProductDetails";
+import Home2 from "../pages/Home2";
+import Scan from "../pages/Scan";
+import Key from "../pages/Key";
+import Qrscanner from "../components/Scanning/QRScan/qrscanner";
+
+import Creater from "../pages/Creater";
 const Routerapp = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route exact path="/" element={<Home2 />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/product" element={<Product />} />
           <Route path="/about" element={<About />} />
@@ -40,6 +47,11 @@ const Routerapp = () => {
           <Route path="/support" element={<Support />} />
           <Route path="/comingsoon" element={<Coming />} />
           <Route path="/productdetails" element={<Productdetails />} />
+          <Route path="/scan" element={<Scan />} />
+          <Route path="/key" element={<Key />} />
+          <Route path="/qr" element={<Qrscanner />} />
+
+          <Route path="/creater" element={<Creater />} />
         </Routes>
       </Router>
     </div>

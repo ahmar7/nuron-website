@@ -1,0 +1,156 @@
+.main-scanner{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    margin-left: -40px;
+}
+.key,
+.scan,
+.nfc
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.inner-area{
+    text-align: center;
+}
+.inner-area h6{
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.icon-s{
+     padding: 7px;
+}
+.active-ico{
+    background-color: rgba(133, 133, 133, 0.418);
+   
+    border-radius: 50px;
+
+}
+.para-text{
+    margin-top: 30px;
+     margin-left: -35px;
+}
+
+.para-text h6{
+    font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+}
+.cam-area{
+  display: flex;
+    justify-content: center;
+   
+    margin-left: -40px;
+    
+    padding: 10px 30px;
+}
+.head{
+    color: rgb(128, 127, 127);
+    text-align: center;
+}
+.inner-icons{
+  display: flex;
+background-color: rgba(134, 133, 133, 0.418);
+    justify-content: center;
+    width: 250px;
+    border-radius: 10px;
+     flex-direction: row;
+}
+.icons-scan{
+margin-top: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+    margin-left: 20px;
+   
+    margin-right: 20px;
+}
+.top{
+    padding-bottom: 80px;
+}
+
+.cam-area p{
+    font-family: 'Libre Barcode 39';
+
+    font-size: 50px;
+}
+.box-in{
+    display: flex;
+    justify-content: center;
+}
+.key-input{
+    
+    color: white;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
+    font-size: 22px !important;
+    
+}
+input[type="text"]{
+    font-size: 18px !important;
+    color: white;
+
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 1px solid white !important;
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 2px solid #ffffff !important;
+   
+}
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
+
+}
+.submit-btn-scan{
+    width: auto
+    ;
+    margin-top: 30px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn-key{
+    width: auto
+    ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.form-btn{
+    width: auto;
+    text-align: center;
+    padding: 5px 15px !important;
+    font-size: 16px !important;
+    background-color: rgba(158, 158, 158, 0.5) !important;
+}
+@media (max-width:768px) {
+    
+    .main-scanner{
+
+    margin-left: 0px;
+}
+.para-text{
+     margin-left: 0px;
+}
+.submit-btn-scan{
+    width: auto
+    ;
+    margin-top: 30px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.cam-area{
+  
+   
+    margin-left: 0px;
+    
+}
+}

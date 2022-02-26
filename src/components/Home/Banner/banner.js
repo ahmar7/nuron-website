@@ -33,7 +33,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const banner = () => {
+const Banner = () => {
   const settings = {
     dots: false,
     arrows: true,
@@ -146,4 +146,4 @@ const banner = () => {
   );
 };
 
-export default banner;
+export default Banner;

@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Profile_1 from '../../../assets/images/profile/profile-01.jpg'
+import Cover_1 from '../../../assets/images/profile/cover-01.jpg'
 const Tab = () => {
     return (
         <div>
@@ -35,7 +36,7 @@ const Tab = () => {
                                             <div className="profile-left col-lg-4">
                                                 <div className="profile-image mb--30">
                                                     <h6 className="title">Change Your Profile Picture</h6>
-                                                    <img id="rbtinput1" src="assets/images/profile/profile-01.jpg" alt="Profile-NFT" />
+                                                    <img id="rbtinput1" src={Profile_1} alt="Profile-NFT" />
                                                 </div>
                                                 <div className="button-area">
                                                     <div className="brows-file-wrapper">
@@ -52,7 +53,7 @@ const Tab = () => {
                                             <div className="profile-left right col-lg-8">
                                                 <div className="profile-image mb--30">
                                                     <h6 className="title">Change Your Cover Photo</h6>
-                                                    <img id="rbtinput2" src="assets/images/profile/cover-01.jpg" alt="Profile-NFT" />
+                                                    <img id="rbtinput2" src={Cover_1} alt="Profile-NFT" />
                                                 </div>
                                                 <div className="button-area">
                                                     <div className="brows-file-wrapper">

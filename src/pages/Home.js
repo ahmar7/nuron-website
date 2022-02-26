@@ -5,10 +5,12 @@ import Service from "../components/Home/service_sec/service";
 import Header from "../layout/Header/header";
 import Footer from "../layout/footer/footer";
 import Product from "../components/Home/Product/product";
+
 const mainBody = () => {
   return (
     <>
       <Header />
+
       <Banner />
       <Collection />
       <Product />

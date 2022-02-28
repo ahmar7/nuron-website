@@ -227,7 +227,7 @@ body::before {
   bottom: 0;
   left: 0;
   border-radius: 15px;
-  background-image: linear-gradient(100deg, #13131d, #0398ed);
+  background-image: linear-gradient(100deg, #272727, #ffffff);
   background-repeat: repeat-x;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -247,5 +247,5 @@ body::before {
   z-index: 1;
 }
 .active-light-mode .product-style-one::before {
-  background-image: linear-gradient(100deg, #fff, #0398ed);
+  background-image: linear-gradient(100deg, rgb(218, 218, 218), #0e0e0e);
 }

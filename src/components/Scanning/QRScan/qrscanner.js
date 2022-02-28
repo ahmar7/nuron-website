@@ -36,6 +36,7 @@ class Test extends Component {
                     onScan={this.handleScan}
                 />
                 <p>{this.state.result}</p>
+                {console.log(this.state.result)}
             </div>
         )
     }

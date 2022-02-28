@@ -18100,12 +18100,16 @@ color: rgb(255, 255, 255);
   border-top: 1px solid var(--color-border);
 }
 .rn-bid-details .countdown .countdown-container .countdown-value {
-  background-color: var(--color-primary-alta);
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(15px);
+}
+.active-light-mode .rn-bid-details .countdown .countdown-container .countdown-value {
+  background-color: rgb(0, 0, 0);
   backdrop-filter: blur(15px);
 }
 
 .tab-wrapper-one {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .tab-wrapper-one .top-seller-inner-one .thumbnail {
   max-width: 50px;
@@ -18153,12 +18157,12 @@ color: rgb(255, 255, 255);
 }
 
 .place-bet-area {
-  background: var(--background-color-1);
-  padding: 30px;
+  /* background: var(--background-color-1); */
+  /* padding: 30px; */
   border-radius: 6px;
   height: auto;
   width: 100%;
-  border: 1px solid var(--color-border);
+  /* border: 1px solid var(--color-border); */
 }
 .place-bet-area .rn-bet-create {
   display: flex;
@@ -18167,7 +18171,7 @@ color: rgb(255, 255, 255);
   margin: -15px;
 }
 .place-bet-area .rn-bet-create .bid-list {
-  padding: 15px;
+  padding: 0px 17px;
 }
 @media only screen and (max-width: 575px) {
   .place-bet-area .rn-bet-create {
@@ -19216,7 +19220,16 @@ button.slide-arrow:hover.slide-arrow i {
 }
 .countdown .countdown-container .countdown-heading {
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  display: block;
+}
+.active-light-mode .countdown .countdown-container .countdown-heading {
+  display: block;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -19243,6 +19256,16 @@ button.slide-arrow:hover.slide-arrow i {
   position: absolute;
   font-size: 20px;
   color: white;
+  font-weight: 400;
+}
+.active-light-mode .countdown .countdown-container .countdown-value:after {
+  content: ":";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -6px;
+  position: absolute;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   font-weight: 400;
 }
 .countdown .countdown-container:last-child .countdown-value::after {
@@ -20496,9 +20519,9 @@ color: rgb(255, 255, 255) !important;
   color: var(--color-dark) !important;
 }
 
-.active-light-mode .place-bet-area {
+/* .active-light-mode .place-bet-area {
   background: var(--color-white);
-}
+} */
 
 .active-light-mode .rn-pd-sm-slick .pd-slide-wrapper .rn-pd-slick {
   background: var(--color-white);

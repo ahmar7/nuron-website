@@ -1,5 +1,6 @@
 import React from "react";
 import AOS from "aos";
+import { Link } from 'react-router-dom';
 import "aos/dist/aos.css";
 import { productData } from '../../../data/productData'
 import Portfolio1 from "../../../assets/images/portfolio/portfolio-01.jpg";
@@ -25,9 +26,9 @@ const Product = () => {
                                 >
                                     <div className="product-style-one no-overlay">
                                         <div className="card-thumbnail">
-                                            <a >
+                                            <Link to='/productdetails'>
                                                 <img src={item.img} alt="NFT_portfolio" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="product-share-wrapper">
                                             <div className="profile-share">
@@ -74,9 +75,9 @@ const Product = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a >
+                                        <Link to='productdetails'>
                                             <span className="product-name">{item.name}</span>
-                                        </a>
+                                        </Link>
                                         <span className="latest-bid">{item.bid}</span>
                                         <div className="bid-react-area">
                                             <div className="last-bid"> View</div>

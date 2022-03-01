@@ -47,11 +47,11 @@ const Routerapp = () => {
           <Route path="/support" element={<Support />} />
           <Route path="/comingsoon" element={<Coming />} />
           <Route path="/productdetails" element={<Productdetails />} />
+          <Route path="/creater" element={<Creater />} />
           <Route path="/scan" element={<Scan />} />
           <Route path="/key" element={<Key />} />
-          <Route path="/qr" element={<Qrscanner />} />
+          {/* <Route path="/qr" element={<Qrscanner />} /> */}
 
-          <Route path="/creater" element={<Creater />} />
         </Routes>
       </Router>
     </div>

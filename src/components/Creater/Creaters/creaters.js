@@ -11,17 +11,7 @@ const Creater = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                             <h2 className="title mb--0">Our Best Creators</h2>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
-                            <div className="shortby-default text-start text-sm-end">
-                                <label className="filter-leble">SHOT BY:</label>
-                                <select>
-                                    <option data-display="Top Rated">Top Rated</option>
-                                    <option value={1}>Best Seller</option>
-                                    <option value={2}>Recent Added</option>
-                                    <option value={3}>Varified</option>
-                                </select>
-                            </div>
-                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15"><div className="shortby-default text-start text-sm-end"><label className="filter-leble">SHOT BY:</label><select style={{ cursor: 'none', display: 'none' }}><option data-display="Top Rated">Top Rated</option><option value={1}>Best Seller</option><option value={2}>Recent Added</option><option value={3}>Varified</option></select><div className="nice-select" tabIndex={0}><span className="current">Top Rated</span><ul className="list"><li data-value="Top Rated" data-display="Top Rated" className="option selected">Top Rated</li><li data-value={1} className="option">Best Seller</li><li data-value={2} className="option">Recent Added</li><li data-value={3} className="option">Varified</li></ul></div></div></div>
                     </div>
                     <div className="row g-5 mt--30 creator-list-wrapper">
                         {/* start single top-seller */}

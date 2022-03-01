@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Form = () => {
     return (
         <div>
@@ -18,12 +19,13 @@ const Form = () => {
                                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                                         <input type="password" id="exampleInputPassword1" />
                                     </div>
-                                    <div className="mb-5 rn-check-box">
+                                    <div className="mb-2 rn-check-box">
                                         <input type="checkbox" className="rn-check-box-input" id="exampleCheck1" />
                                         <label className="rn-check-box-label" htmlFor="exampleCheck1">Remember me leter</label>
                                     </div>
+                                    <div className='mb-4' style={{ cursor: 'pointer' }}><Link to='/forgetpassword' > <label className="rn-check-box-label" htmlFor="exampleCheck1">Forget Password</label></Link></div>
                                     <button type="submit" className="btn btn-primary mr--15">Log In</button>
-                                    <a href="sign-up.html" className="btn btn-primary-alta">Sign Up</a>
+                                    <Link to='/signup' className="btn btn-primary-alta">Sign Up</Link>
                                 </form>
                             </div>
                         </div>

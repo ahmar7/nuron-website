@@ -1,6 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 import { productData } from '../../../data/productData'
 import Portfolio1 from "../../../assets/images/portfolio/portfolio-01.jpg";
 AOS.init();
@@ -22,18 +23,63 @@ const Product = () => {
                 Explore Product
               </h3>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
-              <div
-                className="view-more-btn text-start text-sm-end"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-              >
-                <button className="discover-filter-button discover-filter-activation btn btn-primary">
-                  Filter
-                  <i className="feather-filter" />
-                </button>
+            <div className="default-exp-wrapper my-5">
+              <div className="inner">
+                <div className="filter-select-option">
+                  <label className="filter-leble">LIKES</label>
+                  <select style={{ display: 'none' }}>
+                    <option data-display="Most liked">Most liked</option>
+                    <option value={1}>Least liked</option>
+                  </select><div className="nice-select" tabIndex={0}><span className="current">Most liked</span><ul className="list"><li data-value="Most liked" data-display="Most liked" className="option selected">Most liked</li><li data-value={1} className="option">Least liked</li></ul></div>
+                </div>
+                <div className="filter-select-option">
+                  <label className="filter-leble">Category</label>
+                  <select style={{ display: 'none' }}>
+                    <option data-display="Category">Category</option>
+                    <option value={1}>Art</option>
+                    <option value={1}>Photograph</option>
+                    <option value={2}>Metaverses</option>
+                    <option value={4}>Potato</option>
+                    <option value={4}>Photos</option>
+                  </select><div className="nice-select" tabIndex={0}><span className="current">Category</span><ul className="list"><li data-value="Category" data-display="Category" className="option selected">Category</li><li data-value={1} className="option">Art</li><li data-value={1} className="option">Photograph</li><li data-value={2} className="option">Metaverses</li><li data-value={4} className="option">Potato</li><li data-value={4} className="option">Photos</li></ul></div>
+                </div>
+                <div className="filter-select-option">
+                  <label className="filter-leble">Collections</label>
+                  <select style={{ display: 'none' }}>
+                    <option data-display="Collections">Collections</option>
+                    <option value={1}>BoredApeYachtClub</option>
+                    <option value={2}>MutantApeYachtClub</option>
+                    <option value={4}>Art Blocks Factory</option>
+                  </select><div className="nice-select" tabIndex={0}><span className="current">Collections</span><ul className="list"><li data-value="Collections" data-display="Collections" className="option selected">Collections</li><li data-value={1} className="option">BoredApeYachtClub</li><li data-value={2} className="option">MutantApeYachtClub</li><li data-value={4} className="option">Art Blocks Factory</li></ul></div>
+                </div>
+                <div className="filter-select-option">
+                  <label className="filter-leble">Sale type</label>
+                  <select style={{ display: 'none' }}>
+                    <option data-display="Sale type">Sale type</option>
+                    <option value={1}>Fixed price</option>
+                    <option value={2}>Timed auction</option>
+                    <option value={4}>Not for sale</option>
+                    <option value={4}>Open for offers</option>
+                  </select><div className="nice-select" tabIndex={0}><span className="current">Sale type</span><ul className="list"><li data-value="Sale type" data-display="Sale type" className="option selected">Sale type</li><li data-value={1} className="option">Fixed price</li><li data-value={2} className="option">Timed auction</li><li data-value={4} className="option">Not for sale</li><li data-value={4} className="option">Open for offers</li></ul></div>
+                </div>
+                <div className="filter-select-option">
+                  <label className="filter-leble">Price Range</label>
+                  <div className="price_filter s-filter clear">
+                    <form action="#" method="GET">
+                      <div id="slider-range" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div className="ui-slider-range ui-widget-header ui-corner-all" style={{ left: '56.1224%', width: '3.06122%' }} /><span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} style={{ left: '56.1224%' }} /><span className="ui-slider-handle ui-state-default ui-corner-all" tabIndex={0} style={{ left: '59.1837%' }} /></div>
+                      <div className="slider__range--output">
+                        <div className="price__output--wrap">
+                          <div className="price--output">
+                            <span>Price :</span><input type="text" id="amount" readOnly />
+                          </div>
+                          <div className="price--filter">
+                            <a className="btn btn-primary btn-small" href="#">Filter</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -112,9 +158,9 @@ const Product = () => {
                 >
                   <div className="product-style-one no-overlay">
                     <div className="card-thumbnail">
-                      <a >
+                      <Link className="link-view" to='/productdetails'>
                         <img src={item.img} alt="NFT_portfolio" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="product-share-wrapper">
                       <div className="profile-share">
@@ -161,9 +207,9 @@ const Product = () => {
                         </div>
                       </div>
                     </div>
-                    <a >
+                    <Link className="link-view" to='/productdetails'>
                       <span className="product-name">{item.name}</span>
-                    </a>
+                    </Link>
                     <span className="latest-bid">{item.bid}</span>
                     <div className="bid-react-area">
                       <div className="last-bid"> View</div>
@@ -174,6 +220,7 @@ const Product = () => {
                     </div>
                   </div>
                 </div>
+
               ))
             }
 
@@ -187,9 +234,9 @@ const Product = () => {
             >
               <div className="product-style-one no-overlay">
                 <div className="card-thumbnail">
-                  <a >
+                  <Link className="link-view" to='/productdetails'>
                     <img src={Portfolio1} alt="NFT_portfolio" />
-                  </a>
+                  </Link>
                   <div className="countdown" data-date="2022-11-09">
                     <div className="countdown-container days">
                       <span className="countdown-value">87</span>
@@ -254,9 +301,9 @@ const Product = () => {
                     </div>
                   </div>
                 </div>
-                <a >
+                <Link className="link-view" to='/productdetails'>
                   <span className="product-name"></span>
-                </a>
+                </Link>
                 <span className="latest-bid"></span>
                 <div className="bid-react-area">
                   <div className="last-bid"> View</div>

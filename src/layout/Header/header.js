@@ -66,36 +66,8 @@ const Header = () => {
                         About
                       </Link>{" "}
                     </li>
-                    <li>
-                      <Link to="/create">
-                        Create
-                      </Link>{" "}
-                    </li>
-                    {/* <li>
-                      <Link to="/editprofile">
-                        Edit Profile
-                      </Link>{" "}
-                    </li> */}
-                    {/* <li>
-                      <Link to="/forgetpassword">
-                     Forget Password
-                      </Link>{" "}
-                    </li> */}
-                    {/* <li>
-                      <Link to="/login">
-                        Login
-                      </Link>{" "}
-                    </li> */}
-                    {/* <li>
-                      <Link to="/Signup">
-                        Signup
-                      </Link>{" "}
-                    </li> */}
-                    {/* <li>
-                      <Link to="/support">
-                        Support
-                      </Link>{" "}
-                    </li> */}
+
+
                   </ul>
                   {/* End Mainmanu Nav */}
                 </nav>
@@ -107,14 +79,35 @@ const Header = () => {
               <div className="setting-option rn-icon-list notification-badge">
 
               </div>
+
               <div className="setting-option header-btn">
                 <div className="icon-box">
-                  <a
+                  <Link
                     className="btn btn-primary-alta btn-small"
-                    href="cre"
+                    to='/login'
+                  >
+                    Login
+                  </Link>
+                </div>
+              </div>
+              <div className="setting-option hide-d  header-btn">
+                <div className="icon-box">
+                  <Link
+                    className="btn btn-primary-alta btn-small"
+                    to="/signup"
+                  >
+                    Signup
+                  </Link>
+                </div>
+              </div>
+              <div className="setting-option header-btn">
+                <div className="icon-box">
+                  <Link
+                    className="btn btn-primary-alta btn-small"
+                    to='/create'
                   >
                     Create
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="setting-option rn-icon-list user-account">
@@ -131,7 +124,7 @@ const Header = () => {
                         <a href="#">Set Display Name</a>
                       </span>
                     </div>
-                    <div className="rn-product-inner">
+                    {/* <div className="rn-product-inner">
                       <ul className="product-list">
                         <li className="single-product-list">
                           <div className="thumbnail">
@@ -162,22 +155,22 @@ const Header = () => {
                           <div className="button" />
                         </li>
                       </ul>
-                    </div>
-                    <div className="add-fund-button mt--20 pb--20">
+                    </div> */}
+                    {/* <div className="add-fund-button mt--20 pb--20">
                       <a className="btn btn-primary-alta w-100" href="#">
                         Add Your More Funds
                       </a>
-                    </div>
+                    </div> */}
                     <ul className="list-inner">
                       <li>
-                        <a href="aut">My Profile</a>
+                        <Link to='/author'>My Profile</Link>
                       </li>
                       <li>
-                        <a href="aut">Edit Profile</a>
+                        <Link to='/editprofile'>Edit Profile</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="conn">Manage funds</a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="lo">Sign Out</a>
                       </li>
@@ -193,7 +186,7 @@ const Header = () => {
                   </button>
                 </div>
               </div>
-              <div id="my_switcher" className="setting-option my_switcher">
+              < div id="my_switcher" className="setting-option my_switcher">
                 <ul>
                   <li>
                     <a
@@ -258,6 +251,12 @@ const Header = () => {
               <li>
                 <Link to="/collection">
                   Our Collection
+
+                </Link>{" "}
+              </li>
+              <li>
+                <Link to="/collection">
+                  About
 
                 </Link>{" "}
               </li>

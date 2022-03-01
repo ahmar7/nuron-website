@@ -1,6 +1,6 @@
 import React from 'react';
 import { productData1, productData2, productData3, productData4 } from '../../../data/productData';
-
+import { Link } from 'react-router-dom';
 const Product = () => {
     return (
         <>
@@ -48,9 +48,9 @@ const Product = () => {
                                 <div className="grid-metro-item cat--1 cat--3" key={key}>
                                     <div className="product-style-one no-overlay">
                                         <div className="card-thumbnail">
-                                            <a >
+                                            <Link className="link-view" to='/productdetails'>
                                                 <img src={item.img} alt="NFT_portfolio" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="product-share-wrapper">
                                             <div className="profile-share">
@@ -98,9 +98,9 @@ const Product = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a >
+                                        <Link className="link-view" to='/productdetails'>
                                             <span className="product-name">{item.name}</span>
-                                        </a>
+                                        </Link>
                                         <span className="latest-bid">{item.bid}</span>
                                         <div className="bid-react-area">
                                             <div className="last-bid"> View</div>
@@ -121,9 +121,9 @@ const Product = () => {
                                 <div className="grid-metro-item cat-3 cat--4" key={key}>
                                     <div className="product-style-one no-overlay">
                                         <div className="card-thumbnail">
-                                            <a >
+                                            <Link className="link-view" to='/productdetails'>
                                                 <img src={item.img} alt="NFT_portfolio" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="product-share-wrapper">
                                             <div className="profile-share">
@@ -171,9 +171,9 @@ const Product = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a >
+                                        <Link className="link-view" to='/productdetails'>
                                             <span className="product-name">{item.name}</span>
-                                        </a>
+                                        </Link>
                                         <span className="latest-bid">{item.bid}</span>
                                         <div className="bid-react-area">
                                             <div className="last-bid"> View</div>
@@ -193,9 +193,9 @@ const Product = () => {
                                 <div className="grid-metro-item cat--5 cat--6">
                                     <div className="product-style-one no-overlay">
                                         <div className="card-thumbnail">
-                                            <a >
+                                            <Link className="link-view" to='/productdetails'>
                                                 <img src={item.img} alt="NFT_portfolio" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="product-share-wrapper">
                                             <div className="profile-share">
@@ -243,9 +243,9 @@ const Product = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a >
+                                        <Link className="link-view" to='/productdetails'>
                                             <span className="product-name">{item.name}</span>
-                                        </a>
+                                        </Link>
                                         <span className="latest-bid">{item.bid}</span>
                                         <div className="bid-react-area">
                                             <div className="last-bid"> View</div>
@@ -268,9 +268,9 @@ const Product = () => {
                                     <div className="grid-metro-item cat--1 cat--2">
                                         <div className="product-style-one no-overlay">
                                             <div className="card-thumbnail">
-                                                <a >
+                                                <Link className="link-view" to='/productdetails'>
                                                     <img src={item.img} alt="NFT_portfolio" />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-share-wrapper">
                                                 <div className="profile-share">
@@ -318,9 +318,9 @@ const Product = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a >
+                                            <Link className="link-view" to='/productdetails'>
                                                 <span className="product-name">{item.name}</span>
-                                            </a>
+                                            </Link>
                                             <span className="latest-bid">{item.bid}</span>
                                             <div className="bid-react-area">
                                                 <div className="last-bid"> View</div>

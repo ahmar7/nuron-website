@@ -12,7 +12,7 @@ const Detail = () => {
                 <div className="container">
                     <div className="row g-5">
                         {/* product image area */}
-                        <div className="col-lg-7 col-md-12 col-sm-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="product-tab-wrapper rbt-sticky-top-adjust">
                                 <div className="pd-tab-inner">
 
@@ -37,7 +37,7 @@ const Detail = () => {
                             </div>
                         </div>
                         {/* product image area end */}
-                        <div className="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
+                        <div className="col-lg-5 right-colmn col-md-12 col-sm-12 mt_md--50 mt_sm--60">
                             <div className="rn-pd-content-area">
                                 <div className="pd-title-area">
                                     <h4 className="title">The Amazing Game</h4>
@@ -117,7 +117,7 @@ const Detail = () => {
                                 <div className="rn-bid-details">
                                     <div className="tab-wrapper-one">
                                         <nav className="tab-button-one">
-                                            <div style={{ justifyContent: 'center' }} className="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <div className="nav nav-tabs" id="nav-tab" role="tablist">
                                                 {/* <button className="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Bids</button> */}
                                                 <button className="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Details</button>
                                                 <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">History</button>
@@ -199,7 +199,7 @@ const Detail = () => {
 
                                             <div style={{ textAlign: 'center', justifyContent: 'center', width: '100%', }} className="bid-list left-bid">
 
-                                                <div className="countdown mt--15" data-date="2022-12-10">
+                                                <div className="countdown mt--15" data-date="2022-10-12">
                                                     <div className="countdown-container days">
                                                         <span className="countdown-value">87</span>
                                                         <span className="countdown-heading">D's</span>

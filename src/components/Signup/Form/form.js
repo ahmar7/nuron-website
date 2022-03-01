@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Form = () => {
     return (
         <div>
@@ -38,7 +38,7 @@ const Form = () => {
                                             condition</label>
                                     </div>
                                     <button type="submit" className="btn btn-primary mr--15">Sign Up</button>
-                                    <a href="login.html" className="btn btn-primary-alta">Log In</a>
+                                    <Link to='/login' className="btn btn-primary-alta">Log In</Link>
                                 </form>
                             </div>
                         </div>

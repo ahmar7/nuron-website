@@ -87,7 +87,7 @@ const Footer = () => {
                 <h6 className="widget-title">Information</h6>
                 <ul className="footer-list-one">
                   <li className="single-list">
-                    <a href="#">Market Explore</a>
+                    <Link to='/support'>Support</Link>
                   </li>
                   <li className="single-list">
                     <a href="#">Ready Token</a>
@@ -125,7 +125,7 @@ const Footer = () => {
                         <a >#21 The Wonder</a>
                       </h6>
                       <p>Highest bid 1/20</p>
-                  <div  className="last-bid beed"> View</div>
+                      <div className="last-bid beed"> View</div>
                     </div>
                   </li>
                   <li className="recent-post">
@@ -139,7 +139,7 @@ const Footer = () => {
                         <a >Diamond Dog</a>
                       </h6>
                       <p>Highest bid 1/20</p>
-                       <div  className="last-bid beed"> View</div>
+                      <div className="last-bid beed"> View</div>
                     </div>
                   </li>
                   <li className="recent-post">
@@ -153,7 +153,7 @@ const Footer = () => {
                         <a >Morgan11</a>
                       </h6>
                       <p>Highest bid 1/20</p>
-                      <div  className="last-bid beed"> View</div>
+                      <div className="last-bid beed"> View</div>
                     </div>
                   </li>
                 </ul>
@@ -185,27 +185,27 @@ const Footer = () => {
                 <ul className="social-copyright">
                   <li>
                     <a href="#">
-                      <FeatherIcon icon="facebook"/>
+                      <FeatherIcon icon="facebook" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <FeatherIcon icon="twitter"/>
+                      <FeatherIcon icon="twitter" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <FeatherIcon icon="instagram"/>
+                      <FeatherIcon icon="instagram" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <FeatherIcon icon="linkedin"/>
+                      <FeatherIcon icon="linkedin" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                     <FeatherIcon icon="mail"/>
+                      <FeatherIcon icon="mail" />
                     </a>
                   </li>
                 </ul>
@@ -218,8 +218,8 @@ const Footer = () => {
       <div className="mouse-cursor cursor-outer" />
       <div className="mouse-cursor cursor-inner" />
       {/* Start Top To Bottom Area  */}
-       <a href="#">  <div className="rn-progress-parent">
-     <svg
+      <a href="#">  <div className="rn-progress-parent">
+        <svg
           className="rn-back-circle svg-inner"
           width="100%"
           height="100%"
@@ -227,7 +227,7 @@ const Footer = () => {
         >
           <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
-      
+
       </div>  </a>
       {/* End Top To Bottom Area  */}
     </>

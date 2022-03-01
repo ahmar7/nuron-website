@@ -24,7 +24,7 @@ function App() {
     <div
       style={{ 'cursor': 'default', 'pointer-events': 'auto' }}
     >
-      {/* <AnimatedCursor
+      <AnimatedCursor
         className="cursor-an"
         color="77, 89, 94"
         outerAlpha={0.4}
@@ -33,7 +33,7 @@ function App() {
         outerSize={37.5}
         innerScale={0}
         outerScale={1.5}
-      /> */}
+      />
       <Routerapp />
     </div>
   )

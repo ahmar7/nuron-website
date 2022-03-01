@@ -5025,7 +5025,9 @@ ol ul {
   padding-left: 40px;
   padding-right: 40px;
 }
-
+.link-view{
+  display: inline;
+}
 .slick-gutter-45 {
   margin-left: -45px;
   margin-right: -45px;
@@ -13628,9 +13630,9 @@ button.btn.btn-large {
 }
 
 .ui-widget-content {
-  background: var(--color-primary-alta) none repeat scroll 0 0;
+  background: white none repeat scroll 0 0;
   border: 0 none;
-  color: var(--color-primary);
+  color: rgb(0, 0, 0);
 }
 
 .ui-slider-range.ui-widget-header.ui-corner-all {
@@ -13661,7 +13663,14 @@ button.btn.btn-large {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  background: var(--color-primary) none repeat scroll 0 0;
+  background: white none repeat scroll 0 0;
+  border: 0 none;
+  color: var(--color-primary);
+}
+.active-light-mode .ui-state-default,
+.active-light-mode .ui-widget-content .ui-state-default,
+.active-light-mode .ui-widget-header .ui-state-default {
+  background: rgb(0, 0, 0) none repeat scroll 0 0;
   border: 0 none;
   color: var(--color-primary);
 }
@@ -14672,7 +14681,7 @@ figcaption {
 }
 .banner-style-4 .slider .slider-thumbnail .read-wrapper span {
   font-size: 14px;
-  color: var(--color-primary);
+  color: white;
   display: inline-block;
   margin-top: 15px;
 }
@@ -14918,7 +14927,7 @@ figcaption {
  Common Styles 
 ------------------------*/
 .title-badge {
-  color: var(--color-primary);
+  color: white;
   font-size: 16px;
   width: auto;
   border: 1px solid var(--color-border);
@@ -14933,6 +14942,9 @@ figcaption {
   margin-bottom: 15px;
 }
 
+.active-light-mode.title-badge {
+color: black;
+}
 /*-----------------------
  common slider-nav 
 --------------------------*/
@@ -16377,14 +16389,28 @@ font-family: 'Feather';
   content: "";
   left: auto;
   bottom: 0;
-  background: var(--color-primary);
+  background: white;
+  width: 0;
+  height: 2px;
+  transition: 0.3s;
+  right: 0;
+}
+.active-light-mode .footer-list-one .single-list a::after {
+  position: absolute;
+  content: "";
+  left: auto;
+  bottom: 0;
+  background: rgb(0, 0, 0);
   width: 0;
   height: 2px;
   transition: 0.3s;
   right: 0;
 }
 .footer-list-one .single-list a:hover {
-  color: var(--color-primary) !important;
+  color: white !important;
+}
+.active-light-mode .footer-list-one .single-list a:hover {
+  color: rgb(0, 0, 0) !important;
 }
 .footer-list-one .single-list a:hover::after {
   width: 100%;
@@ -16976,7 +17002,21 @@ color: rgb(255, 255, 255);
   content: "";
   height: 35px;
   width: 35px;
-  background: var(--color-primary-alta);
+  background: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+  transition: var(--transition);
+  opacity: 0;
+}
+.active-light-mode .product-share-wrapper .share-btn::after {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  background: rgb(255, 255, 255);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16986,7 +17026,13 @@ color: rgb(255, 255, 255);
   opacity: 0;
 }
 .product-share-wrapper .share-btn:hover {
-  color: var(--color-white);
+  color: black;
+}
+.product-share-wrapper .share-btn:hover svg{
+  color: black;
+}
+.active-light-mode .product-share-wrapper .share-btn:hover svg{
+  color: rgb(255, 255, 255);
 }
 .product-share-wrapper .share-btn:hover::after {
   opacity: 1;
@@ -17774,7 +17820,14 @@ color: rgb(255, 255, 255);
   position: sticky;
 }
 .product-tab-wrapper .pd-tab-inner {
-  display: flex;
+  /* display: flex; */
+}
+.product-details-area .container{
+  padding-left: 0 !important;
+  margin-left: 60px !important;
+}
+.rn-pd-content-area{
+  padding-left: 0px;
 }
 .product-tab-wrapper .rn-pd-nav {
   max-width: 100%;
@@ -17804,11 +17857,43 @@ color: rgb(255, 255, 255);
 .product-tab-wrapper .rn-pd-content .tab-pane {
   height: 100%;
 }
+@media (max-width:991px){
+  .product-details-area .container{
+  padding-left: 0 !important;
+  margin-left: 20px !important;
+}
+}
 .product-tab-wrapper .rn-pd-content .rn-pd-thumbnail {
   padding: 15px;
+ 
+  width: 90%;
   background: var(--background-color-1);
   border-radius: 7px;
   border: 2px solid transparent;
+}
+@media (max-width:575px) {
+  .row .mb--30 .align-items-center{
+    margin-left: 10px;
+  }
+  .right-colmn{
+    padding-right: 57px !important;
+  }
+  .rbt-sticky-top-adjust{
+    margin-left: -25px;
+  }
+}
+@media (max-width:991px) {
+  .rn-pd-content-area{
+  padding-left: 20px;
+}
+  .product-tab-wrapper .rn-pd-content .rn-pd-thumbnail {
+  padding: 15px;
+ 
+  width: auto;
+  background: var(--background-color-1);
+  border-radius: 7px;
+  border: 2px solid transparent;
+}
 }
 @media only screen and (max-width: 575px) {
   .product-tab-wrapper .rn-pd-content .rn-pd-thumbnail {
@@ -18102,10 +18187,12 @@ color: rgb(255, 255, 255);
 .rn-bid-details .countdown .countdown-container .countdown-value {
   background-color: rgb(255, 255, 255);
   backdrop-filter: blur(15px);
+  color: black;
 }
 .active-light-mode .rn-bid-details .countdown .countdown-container .countdown-value {
   background-color: rgb(0, 0, 0);
   backdrop-filter: blur(15px);
+  color: white;
 }
 
 .tab-wrapper-one {
@@ -18124,8 +18211,17 @@ color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   transition: var(--transition);
-  background: var(--background-color-1);
-  border: 1px solid var(--color-border);
+  background: black;
+  border: none;
+  border-radius: 6px;
+}
+.active-light-mode .tab-button-one .nav-tabs {
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  transition: var(--transition);
+  background: rgb(255, 255, 255);
+  border: none;
   border-radius: 6px;
 }
 .tab-button-one .nav-tabs button {
@@ -18145,8 +18241,14 @@ color: rgb(255, 255, 255);
   }
 }
 .tab-button-one .nav-tabs button.active {
-  background: var(--color-primary-alta);
-  color: var(--color-white);
+  background: white;
+  color: black;
+  border-radius: 5px;
+  border: transparent;
+}
+.active-light-mode .tab-button-one .nav-tabs button.active {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   border: transparent;
 }
@@ -18822,8 +18924,14 @@ body.modal-open {
   .activity-direction {
     flex-direction: column-reverse;
   }
-}
 
+  
+}
+@media(max-width:768px){
+  .hide-d{
+    display: none;
+  }
+}
 .filter-wrapper {
   height: 100%;
 }
@@ -19189,8 +19297,12 @@ button.slide-arrow:hover.slide-arrow i {
 }
 .slick-dots li.slick-active button {
   background: transparent !important;
-  border: 2px solid var(--color-primary);
+  border: 2px solid white;
 }
+/* .active-light-mode.slick-dots li.slick-active button {
+  background: transparent !important;
+  border: 2px solid black;
+} */
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -19818,9 +19930,13 @@ tbody.ranking tr td .thumbnail img {
 .active-light-mode .rn-breadcrumb-inner .breadcrumb-list li a,
 .active-light-mode .rn-breadcrumb-inner .breadcrumb-list li.separator,
 .active-light-mode .search-form-wrapper .search-icon button i,
-.active-light-mode .product-share-wrapper .share-btn .icon,
+
 .active-light-mode .rn-search-mobile.form-group input {
   color: var(--color-light-body);
+}
+.active-light-mode .product-share-wrapper .share-btn .icon{
+  color: rgb(0, 0, 0);
+  
 }
 .active-light-mode .color-body {
   color: var(--color-light-body) !important;
@@ -19878,6 +19994,12 @@ tbody.ranking tr td .thumbnail img {
 .active-light-mode .rbt-single-widget.widget_recent_entries .inner a,
 .active-light-mode .upcoming-projects tr th span {
   color: var(--color-light-heading);
+}
+.name:hover{
+  color:white !important;
+}
+.active-light-mode .name:hover{
+  color:rgb(0, 0, 0) !important;
 }
 .active-light-mode .btn-transparent{
   color: rgb(0, 0, 0);
@@ -19971,7 +20093,7 @@ tbody.ranking tr td .thumbnail img {
   border-right: 2px solid var(--color-light-body);
 }
 .active-light-mode .ui-widget-content {
-  background: var(--color-white) none repeat scroll 0 0;
+    background: #000000 none repeat scroll 0 0;
 }
 .active-light-mode .rn-progress-parent {
   box-shadow: inset 0 0 0 2px var(--color-white);
@@ -20060,7 +20182,7 @@ color: rgb(255, 255, 255) !important;
   .btn-setting-text
   + .btn-setting-text,
 .active-light-mode .top-seller-inner-one .top-seller-wrapper .thumbnail a,
-.active-light-mode .title-badge,
+
 .active-light-mode .tagcloud a,
 .active-light-mode .rn-icon-list .icon-box > a,
 .active-light-mode .rn-icon-list .icon-box > button,
@@ -20084,6 +20206,10 @@ color: rgb(255, 255, 255) !important;
 .active-light-mode .left-header-style .authore-profile .thumbnail img,
 .active-light-mode .hamberger button.hamberger-button {
   border-color: var(--color-border-white);
+}
+.active-light-mode .title-badge{
+  color: black;
+  border-color: black;
 }
 .active-light-mode button.btn.btn-primary {
   border: 2px solid black;
@@ -20314,15 +20440,18 @@ color: rgb(255, 255, 255) !important;
 
 .active-light-mode .product-style-one,
 .active-light-mode .rn-service-one,
+
 .active-light-mode .rn-collection-inner-one .collection-wrapper,
 .active-light-mode .slider-style-2 .single-slide .inner,
 .active-light-mode .slider-style-3 .slide-small-wrapper,
-.active-light-mode .tab-button-one .nav-tabs,
+
 .active-light-mode nav.pagination-wrapper .pagination,
 .active-light-mode .product-tab-nav .nav {
   background: var(--color-white);
 }
-
+.active-light-mode .tab-button-one .nav-tabs{
+  background: #eeeef5;
+}
 .active-light-mode .nice-select::after {
   border-bottom: 2px solid rgb(0, 0, 0);
   border-right: 2px solid rgb(0, 0, 0);
@@ -20340,7 +20469,7 @@ color: rgb(255, 255, 255) !important;
 }
 
 .active-light-mode .product-share-wrapper .share-btn::after {
-  background: var(--color-gray-2);
+  background: rgb(0, 0, 0);
 }
 
 .active-light-mode .product-style-one .bid-react-area .react-area::after {

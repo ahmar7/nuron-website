@@ -18,6 +18,10 @@ const Header = () => {
     console.log(switchToggle)
 
   }
+  let changeColor = () => {
+    let body = document.getElementById('switchBody')
+    body.classList.toggle('active-light-mode')
+  }
 
   return (
     <div>
@@ -186,12 +190,13 @@ const Header = () => {
                   </button>
                 </div>
               </div>
-              < div id="my_switcher" className="setting-option my_switcher">
+              < div className="setting-option my_switcher">
                 <ul>
                   <li>
                     <a
                       href="javascript: void(0);"
                       data-theme="light"
+                      onClick={changeColor}
                       className="setColor light"
                     >
                       <img src={sun_1} alt="Sun images" />
@@ -201,6 +206,7 @@ const Header = () => {
                     <a
                       href="javascript: void(0);"
                       data-theme="dark"
+                      onClick={changeColor}
                       className="setColor dark"
                     >
                       <img src={vector} alt="Vector Images" />
@@ -211,9 +217,9 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header >
       {/* end header area  */}
-      <div className={switchToggle ? "popup-mobile-menu active" : "popup-mobile-menu notactive"}
+      < div className={switchToggle ? "popup-mobile-menu active" : "popup-mobile-menu notactive"}
       >
         <div className="inner">
           <div className="header-top">
@@ -264,9 +270,9 @@ const Header = () => {
             {/* End Mainmanu Nav */}
           </nav>
         </div>
-      </div>
+      </div >
       {/* ENd Header Area */}
-    </div>
+    </div >
   );
 };
 

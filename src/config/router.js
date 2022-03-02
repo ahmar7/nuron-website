@@ -32,8 +32,8 @@ const Routerapp = () => {
     <div>
       <Router>
         <Routes>
-          {/* <Route exact path="/" element={<Home />} /> */}
           <Route exact path="/" element={<Home2 />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
           <Route path="/collection" element={<Collection />} />
           <Route path="/product" element={<Product />} />
           <Route path="/about" element={<About />} />

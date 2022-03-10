@@ -5,6 +5,7 @@ import TableRowsIcon from '@mui/icons-material/TableRows';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MapIcon from '@mui/icons-material/Map';
 import ImageIcon from '@mui/icons-material/Image';
+import { activetab, activetab1, activetab2, activetab3, hidebx, backtab, backtab1, backtab2 } from './toggle'
 import Button from '@mui/material/Button';
 import StickyNote2Icon from '@mui/icons-material/StickyNote2';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -14,13 +15,16 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import StyleIcon from '@mui/icons-material/Style';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './style.css'
 const New = () => {
-    // const [value, setValue] = React.useState(new Date('start*'));
+    let showbx = () => {
+        let bx = document.getElementById("hide_bx")
+        bx.classList.add('show-ticket')
+    }
 
-    // const handleChange = (newValue) => {
-    //     setValue(newValue);
-    // };
     return (
         <div>
             {/* Start tabs area */}
@@ -113,7 +117,7 @@ const New = () => {
                                             </TextField>
                                         </div>
                                         <div className='phy-btns align-btn'>
-                                            <button>Next</button>
+                                            <button onClick={activetab}>Next</button>
 
                                         </div>
                                     </div>
@@ -165,8 +169,8 @@ const New = () => {
                                         </div>
                                     </div>
                                     <div className='phy-btns align-btn'>
-                                        <button>Back</button>
-                                        <button>Next</button>
+                                        <button onClick={backtab}>Back</button>
+                                        <button onClick={activetab1}>Next</button>
 
                                     </div>
                                     {/* End Details */}
@@ -178,6 +182,7 @@ const New = () => {
                                         <LocalActivityIcon className='grid-icon' />
                                         <h5>Ticket</h5>
                                         <Button
+                                            onClick={showbx}
                                             className='upload-btn'
                                             variant="contained"
                                             component="label"
@@ -189,6 +194,157 @@ const New = () => {
                                         <div><LocalActivityIcon className='ticket-ico' /></div>
                                         <div>No Tickets Added</div>
                                     </div>
+
+                                    <div id='hide_bx' className='hidden-ticket'>
+                                        <div className='header-ticket'>
+                                            <div>Add Ticket</div>
+                                            <div className='main-cancel'>
+                                                <button onClick={hidebx} className='cancel-btn'>Cancel</button>
+                                            </div>
+                                        </div>
+                                        <div className='tags-input'>
+                                            <TableRowsIcon className='grid-icon' />
+                                            <h5>Basic Info</h5>
+                                            <div className='date-pick'>
+                                                <p>Ticket label*</p>
+                                                <span className='tee-sign'>T</span>
+                                                <input type="text" className='input-per-ti' name="" id="" />
+
+
+                                            </div>
+                                            <div className='top-basic'>
+                                                <h6> <StickyNote2Icon className='grid-icon-ti' /></h6>
+                                                <TextField className='event-title'
+                                                    label="Ticket desccription"
+                                                    autoComplete='off'
+
+                                                    InputLabelProps={{ className: 'Input__Label ' }}
+                                                >
+
+                                                </TextField>
+                                            </div>
+
+                                            <div className='date-pick'>
+                                                <p>Price*</p>
+                                                <input type="text" className='input-per' name="" id="" />
+                                                <p className='percent-sign'><LocalFireDepartmentIcon className='grid-icon-ri' /></p>
+
+                                                <Button
+                                                    className='upload-btn'
+                                                    variant="contained"
+                                                    component="label"
+                                                >
+                                                    Allow donations
+                                                </Button>
+
+                                            </div>
+                                            <div className='date-pick'>
+                                                <p>Max tickets*</p>
+                                                <input type="text" className='input-per' name="" id="" />
+                                                <p className='percent-sign'>  <LocalActivityIcon className='grid-icon-ri' /></p>
+
+                                                <Button
+                                                    className='upload-btn'
+                                                    variant="contained"
+                                                    component="label"
+                                                >
+                                                    Unlimited
+                                                </Button>
+
+                                            </div>
+                                            <div className='tags-input mt-4'>
+                                                <AccessTimeIcon className='grid-icon' />
+                                                <h5>Ticket Sale</h5>
+                                                <div className='date-pick'>
+                                                    <p>Start*</p>
+                                                    <input type="date" name="" id="" />
+                                                    <p>End*</p>
+                                                    <input type="date" name="" id="" />
+
+                                                </div>
+
+                                            </div>
+                                            <div className='tags-input mt-4'>
+                                                <StyleIcon className='grid-icon' />
+                                                <h5>Style</h5>
+                                            </div>
+                                            <div className='detail-bx'>
+                                                <div className='inner-bx'>
+
+                                                    <h6 className='main-eve'>Event name here</h6>
+                                                    <p className='eve'>Ticket title here</p>
+                                                    <LocationOnIcon className='location-ico' />
+                                                    <Button
+                                                        className='upload-btn-tr'
+                                                        variant="contained"
+                                                        component="label"
+                                                    >
+                                                        Event location here
+                                                    </Button>
+                                                    <p className='eve mt-3'>22, March 2022, 2:52 AM</p>
+                                                    <div>
+                                                        <div className='tags-input '>
+                                                            <LocalActivityIcon className='grid-icon' />
+                                                            <h5 className='tickt'>1 Ticket</h5>
+                                                            <Button
+                                                                className='upload-btn-tr ms-5'
+                                                                variant="contained"
+                                                                component="label"
+                                                            >
+                                                                Create
+                                                            </Button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='tags-input '>
+                                                <h5>Title & details</h5>
+                                                <div className='phy-btns '>
+                                                    <button>Title color</button>
+
+                                                    <button>Detail color</button>
+
+                                                </div>
+                                            </div>
+                                            <div className='tags-input '>
+                                                <h5>Button</h5>
+                                                <div className='phy-btns bg-pic '>
+                                                    <button>Button Background Color</button>
+
+                                                    <button>Button Background Hover Color</button>
+                                                    <button>Button Text Color</button>
+
+                                                </div>
+                                            </div>
+                                            <div className='tags-input '>
+                                                <h5>Background</h5>
+                                                <div className='phy-btns '>
+                                                    <Button
+                                                        className='upload-btn'
+                                                        variant="contained"
+                                                        component="label"
+                                                    >
+                                                        Upload Image
+                                                        <input
+                                                            type="file"
+                                                            hidden
+                                                        />
+                                                    </Button> No files selected<br />
+                                                    <br />
+                                                    <button>Fill Background</button>
+                                                    <button>Gutter Left</button>
+                                                    <button>Ticket Background</button>
+
+                                                </div>
+                                            </div>
+                                            <div className='phy-btns mt-5 align-btn'>
+                                                <button onClick={hidebx}>Cancel</button>
+                                                <button>Save</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div className='tags-input mt-5'>
                                         <MonetizationOnIcon className='grid-icon' />
                                         <h5>Sales Tax</h5>
@@ -202,8 +358,8 @@ const New = () => {
                                         </div>
                                     </div>
                                     <div className='phy-btns align-btn'>
-                                        <button>Back</button>
-                                        <button>Next</button>
+                                        <button onClick={backtab1}>Back</button>
+                                        <button onClick={activetab2}>Next</button>
 
                                     </div>
                                     {/* Ticket area ENd */}
@@ -237,8 +393,8 @@ const New = () => {
 
                                         </div>
                                         <div className='phy-btns align-btn'>
-                                            <button>Back</button>
-                                            <button>Next</button>
+                                            <button onClick={backtab2}>Back</button>
+                                            <button onClick={activetab3}>Next</button>
 
                                         </div>
                                     </div>
@@ -315,7 +471,10 @@ const New = () => {
                                         </tr>
                                     </table>
 
+                                    <div className='phy-btns align-btn'>
+                                        <button >Connect to Wallet</button>
 
+                                    </div>
                                 </div>
                                 {/* End Reveiw area  */}
                             </div>

@@ -39,25 +39,40 @@
     font-size: 25px !important;
 }
 
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+.top-basic .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     border-color: white !important;
     color: white !important;
     outline: white !important;
     width: 100%;
     padding: 10px 15px !important;
     border-radius: 15px;
-    width: 100% !important;
+    width: 493px !important;
 }
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+.active-light-mode .top-basic .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+    outline: rgb(0, 0, 0) !important;
+
+}
+
+.top-basic .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border: 1px solid white !important;
     border-radius: 15px !important;
     padding: 0 11px !important;
-    width: 100% !important;
 }
 
-.css-1z7n62 span {
+.active-light-mode .top-basic .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 1px solid rgb(0, 0, 0) !important;
+
+}
+
+.top-basic .css-1z7n62 span {
     color: white !important;
+}
+
+.active-light-mode .top-basic .css-1z7n62 span {
+    color: rgb(0, 0, 0) !important;
 }
 
 .top-basic {
@@ -67,4 +82,174 @@
 .Input__Label {
     color: white !important;
     font-size: 12px !important;
+}
+
+.active-light-mode .Input__Label {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+.date-pick p {
+    font-size: 12px !important;
+    display: inline;
+    position: absolute;
+    margin-top: -10px;
+    padding: 0 3px;
+    margin-left: 10px;
+    background-color: #0f0d17;
+}
+
+.active-light-mode .date-pick p {
+    color: black;
+    background-color: rgb(169 169 179);
+}
+
+.date-pick input {
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 50px;
+    color: white !important;
+    border-color: white;
+}
+
+.active-light-mode .date-pick input {
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 50px;
+    color: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 0, 0);
+}
+
+
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    padding-left: 20px;
+    padding-top: 4px;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    background-color: #0f0d17;
+    line-height: 1.4375em !important;
+    letter-spacing: 0.00938em !important;
+    padding: 0 10px !important;
+    position: relative !important;
+    display: block !important;
+    transform-origin: top left !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: calc(133% - 30px) !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: -23px !important;
+
+}
+
+.active-light-mode .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+
+    background-color: rgb(169 169 179);
+
+
+}
+
+.top-basic h6 {
+    display: inline;
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.date-pick {
+    margin-top: 25px;
+
+}
+
+.date-input {
+    display: inline !important;
+}
+
+.phy-btns {
+    margin-top: 10px;
+}
+
+.phy-btns button {
+    padding: 9px 10px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: white;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+.phy-btns button:focus {
+    color: white;
+}
+
+.phy-btns button:active {
+    color: white;
+}
+
+.phy-btns button:hover {
+    color: black;
+    background-color: white;
+
+}
+
+.active-light-mode .phy-btns button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.active-light-mode .phy-btns button {
+
+    color: black;
+    border-color: rgb(0, 0, 0);
+
+
+}
+
+@media (max-width:1200px) {
+    .date-pick input {
+        width: 202px;
+
+    }
+
+    .top-basic .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+
+        width: 403px !important;
+    }
+}
+
+@media (max-width:500px) {
+    .top-basic .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+
+        width: 303px !important;
+    }
+
+    .date-pick input {
+        width: 152px;
+
+    }
+}
+
+@media (max-width:400px) {
+    .date-pick input {
+        width: 303px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .top-basic .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+
+        width: 253px !important;
+    }
 }

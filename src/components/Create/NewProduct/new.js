@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 import './style.css'
 const New = () => {
@@ -32,7 +33,11 @@ const New = () => {
                                 {/* sigle tab content */}
                                 <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                     {/* start personal information */}
-                                    <div className="nuron-information">
+                                    <div className='para-edit'>
+                                        < ErrorOutlineIcon />
+                                        <h3>RULES</h3>
+                                    </div>
+                                    {/* <div className="nuron-information">
                                         <Box
                                             component="form"
 
@@ -48,7 +53,7 @@ const New = () => {
 
                                             </div>
                                         </Box>
-                                    </div>
+                                    </div> */}
                                     {/* End personal information */}
                                 </div>
                                 {/* End single tabv content */}

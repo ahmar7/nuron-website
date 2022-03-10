@@ -1,3 +1,24 @@
 .align-li {
     text-align: center !important;
 }
+
+/* .para-edit {
+    background-color: rgb(31, 30, 30);
+} */
+
+.para-edit h5 {
+    display: inline;
+    margin-left: 10px;
+    font-size: 15px !important;
+}
+
+.warn-icon {
+    margin-top: -3px;
+    font-size: 20px !important;
+}
+
+.para-edit ol li {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    padding-bottom: 0px !important;
+}

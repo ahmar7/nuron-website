@@ -35,7 +35,12 @@ const New = () => {
                                     {/* start personal information */}
                                     <div className='para-edit'>
                                         < ErrorOutlineIcon className='warn-icon' />
-                                        RULES
+                                        <h5>RULES</h5>
+                                        <ol>
+                                            <li>You must include at least one email/phone number AND at least one Discord/Twitter/Facebook/etc username for contact purposes.</li>
+                                            <li> You must be clear on what the benefits the ticket provides, and how exactly people can get to or access the event.</li>
+                                            <li>No lottery or raffle events are allowed, unless pre-approved by Metapass. No spam events are allowed.</li>
+                                        </ol>
                                     </div>
                                     {/* <div className="nuron-information">
                                         <Box

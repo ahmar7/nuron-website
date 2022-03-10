@@ -18,6 +18,80 @@
     font-size: 20px !important;
 }
 
+.ticket-ico {
+    font-size: 35px !important;
+}
+
+.chk-bx {
+    position: absolute;
+    opacity: 1;
+    margin-top: -7px !important;
+    width: 17px;
+
+}
+
+.tax {
+    display: inline !important;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.percent-sign {
+    margin-left: -46px !important;
+    margin-top: 15px !important;
+}
+
+.input-per {
+    border: 1px solid white !important;
+    font-size: 13px !important;
+}
+
+.title-rev {
+    font-size: 15px;
+    word-spacing: 0.2rem !important;
+}
+
+.subtitle-rev {
+    font-weight: lighter;
+    font-size: 12px;
+    word-spacing: 0.2rem !important;
+    margin-left: 30px;
+    text-align: right;
+    display: flex;
+
+}
+
+.active-light-mode .input-per {
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
+.review-in {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.review-details {
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-area {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ticket-area div {
+    display: block !important;
+}
+
 .para-edit ol li {
     margin-bottom: 2px !important;
     margin-top: 2px !important;
@@ -175,7 +249,7 @@
 }
 
 .phy-btns {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .phy-btns button {
@@ -187,6 +261,38 @@
     border-color: white;
     border-radius: 16px;
     font-size: 12px;
+}
+
+.radio-check {
+    margin-top: 20px;
+}
+
+
+.radio-check p {
+    display: inline;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.li-sy {
+
+    margin-left: 5px !important;
+}
+
+
+
+.align-btn {
+    text-align: right;
+
+    display: flex;
+    justify-content: right;
+}
+
+.radio-check input {
+    opacity: 1;
+    position: absolute;
+    margin-top: -7px !important;
+    width: 17px;
 }
 
 .phy-btns button:focus {
@@ -217,6 +323,66 @@
 
 }
 
+.tab-pad {
+    padding-top: 10px !important;
+}
+
+.upload-btn {
+    color: white !important;
+    background-color: transparent !important;
+    margin-left: 15px !important;
+    margin-right: 10px !important;
+    border-radius: 20px !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+
+.date-pick textarea {
+    outline: white !important;
+    border: 1px solid white !important;
+    border-radius: 16px;
+    color: white !important;
+}
+
+.date-pick textarea:focus {
+    border-radius: 16px;
+    border: 1px solid white !important;
+
+}
+
+.active-light-mode .date-pick textarea:focus {
+    border-radius: 16px;
+    border: 1px solid rgb(0, 0, 0) !important;
+
+}
+
+.active-light-mode .date-pick textarea {
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.tags-input p {
+    font-size: 12px !important;
+    display: inline;
+}
+
+.tags-input p {
+    display: inline;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.last-o {
+    margin-left: 20px;
+}
+
+.active-light-mode .upload-btn {
+    color: rgb(0, 0, 0) !important;
+
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
 @media (max-width:1200px) {
     .date-pick input {
         width: 202px;
@@ -238,6 +404,15 @@
     .date-pick input {
         width: 152px;
 
+    }
+}
+
+@media (max-width:460px) {
+    .phy-btns button {
+        width: 120px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 

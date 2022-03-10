@@ -24,15 +24,28 @@
 
 .chk-bx {
     position: absolute;
-    opacity: 1;
-    margin-top: -7px !important;
-    width: 17px;
+    opacity: 1 !important;
+    margin-top: -2px !important;
+    width: 14px !important;
+
+}
+
+.chk-bx:focus {
+    background-color: black !important;
+    color: white !important;
+
+}
+
+.ticket-area .chk-bx:checked {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
 
 }
 
 .tax {
     display: inline !important;
     font-size: 13px;
+    margin-left: 20px !important;
     font-weight: lighter;
 }
 
@@ -98,9 +111,7 @@
     outline: none;
 }
 
-/* .left-comn {
-    width: 10% !important;
-} */
+
 
 .ticket-area {
     display: flex;
@@ -212,10 +223,7 @@
 }
 
 .active-light-mode .date-pick input {
-    width: 250px;
-    margin-right: 20px;
-    border-radius: 15px;
-    height: 50px;
+
     color: rgb(0, 0, 0) !important;
     border-color: rgb(0, 0, 0);
 }
@@ -294,7 +302,7 @@
 .radio-check p {
     display: inline;
     font-size: 15px;
-    margin-left: 30px;
+    margin-left: 30px !important;
 }
 
 .li-sy {
@@ -312,10 +320,10 @@
 }
 
 .radio-check input {
-    opacity: 1;
+    opacity: 1 !important;
     position: absolute;
     margin-top: -7px !important;
-    width: 17px;
+    width: 14px;
 }
 
 .phy-btns button:focus {
@@ -351,6 +359,7 @@
 }
 
 .upload-btn {
+    margin-top: -5px !important;
     color: white !important;
     background-color: transparent !important;
     margin-left: 15px !important;
@@ -373,7 +382,6 @@
 }
 
 .active-light-mode .date-pick textarea:focus {
-    border-radius: 16px;
     border: 1px solid rgb(0, 0, 0) !important;
 
 }

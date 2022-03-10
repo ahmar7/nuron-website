@@ -349,13 +349,26 @@
 
 .phy-btns button {
     padding: 9px 10px;
-    width: 120px;
+    width: 130px;
     cursor: pointer;
+    border-color: white !important;
     margin-left: 10px;
     margin-right: 10px;
-    border-color: white;
     border-radius: 16px;
     font-size: 12px;
+}
+
+.hidden-ticket {
+    display: none;
+}
+
+.show-ticket {
+    display: block !important;
+}
+
+.bg-pic button {
+    margin-top: 20px;
+    width: 200px !important;
 }
 
 .main-cancel {
@@ -398,6 +411,7 @@
 
 .phy-btns button:focus {
     color: white;
+    border-color: white !important;
 }
 
 .phy-btns button:active {
@@ -456,6 +470,15 @@
     padding-top: 10px !important;
 }
 
+.location-ico {
+    position: absolute;
+    font-size: 18px !important;
+    margin-top: -0px;
+    margin-left: 4px;
+}
+
+
+
 .upload-btn {
     margin-top: -5px !important;
     color: white !important;
@@ -466,7 +489,28 @@
     border: 1px solid rgb(255, 255, 255) !important;
 }
 
+.upload-btn-tr {
+    margin-top: -5px !important;
+    color: white !important;
+    background-color: transparent !important;
+
+    border-radius: 8px !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+
+.eve {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px !important;
+}
+
 .active-light-mode .upload-btn {
+    color: rgb(0, 0, 0) !important;
+
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
+.active-light-mode .upload-btn-tr {
     color: rgb(0, 0, 0) !important;
 
     border: 1px solid rgb(0, 0, 0) !important;
@@ -519,6 +563,12 @@
     border: 1px solid rgb(0, 0, 0) !important;
 }
 
+.active-light-mode .upload-btn-tr {
+    color: rgb(0, 0, 0) !important;
+
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
 .hidden-ticket {
     border-radius: 8px;
     padding: 20px;
@@ -537,6 +587,18 @@
     border-radius: 15px;
     justify-content: center;
     height: 300px;
+}
+
+.tickt {
+    font-size: 15px !important;
+    font-weight: lighter !important;
+    margin-top: -5px !important;
+}
+
+.inner-bx {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media (max-width:1200px) {

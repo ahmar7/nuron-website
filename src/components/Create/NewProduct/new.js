@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import MenuItem from '@mui/material/MenuItem';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-
+import TableRowsIcon from '@mui/icons-material/TableRows';
 import './style.css'
 const New = () => {
     return (
@@ -41,6 +42,11 @@ const New = () => {
                                             <li> You must be clear on what the benefits the ticket provides, and how exactly people can get to or access the event.</li>
                                             <li>No lottery or raffle events are allowed, unless pre-approved by Metapass. No spam events are allowed.</li>
                                         </ol>
+
+                                    </div>
+                                    <div className='tags-input'>
+                                        <TableRowsIcon className='grid-icon' />
+                                        <h5>Basic Info</h5>
                                     </div>
                                     {/* <div className="nuron-information">
                                         <Box

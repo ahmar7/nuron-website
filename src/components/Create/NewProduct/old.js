@@ -128,3 +128,16 @@ const New = () => {
 }
 
 export default New;
+
+
+	
+
+Event banner	No banner image
+Event description
+
+
+Visibility
+Unlisted
+
+
+

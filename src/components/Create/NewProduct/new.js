@@ -49,7 +49,7 @@ const New = () => {
                             <div className="tab-content tab-content-edit-wrapepr" id="nav-tabContent">
                                 {/* sigle tab content */}
                                 <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    {/* start personal information */}
+                                    {/* start Basic Info */}
                                     <div className='para-edit'>
                                         < ErrorOutlineIcon className='warn-icon' />
                                         <h5>RULES</h5>
@@ -117,12 +117,12 @@ const New = () => {
 
                                         </div>
                                     </div>
-                                    {/* End personal information */}
+                                    {/* End Basic Info */}
                                 </div>
                                 {/* End single tabv content */}
                                 {/* sigle tab content */}
                                 <div className="tab-pane tab-pad fade" id="nav-homes" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    {/* start personal information */}
+                                    {/* start Details */}
                                     <div className='tags-input '>
                                         <ImageIcon className='grid-icon' />
                                         <h5>Banner</h5>
@@ -169,11 +169,11 @@ const New = () => {
                                         <button>Next</button>
 
                                     </div>
-                                    {/* End personal information */}
+                                    {/* End Details */}
                                 </div>
                                 {/* End single tabv content */}
                                 <div className="tab-pane tab-pad fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                    {/* change password area Start */}
+                                    {/* Ticket area Start */}
                                     <div className='tags-input '>
                                         <LocalActivityIcon className='grid-icon' />
                                         <h5>Ticket</h5>
@@ -206,10 +206,10 @@ const New = () => {
                                         <button>Next</button>
 
                                     </div>
-                                    {/* change password area ENd */}
+                                    {/* Ticket area ENd */}
                                 </div>
                                 <div className="tab-pane tab-pad fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                    {/* start Notification Setting  */}
+                                    {/* start Checkout Formg  */}
                                     <div className='tags-input '>
                                         <EventNoteIcon className='grid-icon' />
                                         <h5>Checkout Form</h5>
@@ -242,8 +242,9 @@ const New = () => {
 
                                         </div>
                                     </div>
-                                    {/* End Notification Setting  */}
+                                    {/* End Checkout Form */}
                                 </div>
+                                {/* Start Reveiw area */}
                                 <div className="tab-pane tab-pad fade " id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
                                     <div className='tags-input '>
                                         <RateReviewIcon className='grid-icon' />
@@ -256,36 +257,67 @@ const New = () => {
                                             < ReportProblemIcon className='warn-icon ' /> <p>Please complete all sections before you can publish.</p>
                                         </div>
                                     </div>
-                                    <div className='review-details'>
+                                    <table className='review-table' >
 
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event name</div>
-                                            <div className='subtitle-rev'>No Event Name</div>
-                                        </div>
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event Start</div>
-                                            <div className='subtitle-rev'>No date specified</div>
-                                        </div>
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event End</div>
-                                            <div className='subtitle-rev'>No date specified</div>
-                                        </div>
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event name</div>
-                                            <div className='subtitle-rev'>Virtual event <br />
+                                        <tr>
+                                            <td className='left-colmn'>Event name</td>
+                                            <td>No event name</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Event start</td>
+                                            <td>No date specified</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Event end</td>
+                                            <td>No date specified</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Event location</td>
+                                            <td>Virtual event <br />
                                                 Show location only to attendees <br />
-                                                Undefined link</div>
-                                        </div>
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event name</div>
-                                            <div className='subtitle-rev'>No Event Name</div>
-                                        </div>
-                                        <div className='review-in'>
-                                            <div className='title-rev'>Event name</div>
-                                            <div className='subtitle-rev'>No Event Name</div>
-                                        </div>
-                                    </div>
+                                                Undefined link</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Event Banner</td>
+                                            <td>No banner image </td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Event description</td>
+                                            <td>## Organiser name / group, <br /><br />
+
+                                                ## Event description<br /><br />
+
+                                                ## How to get there
+                                                (Insert detailed information on where the event will be at, what time, how to get to the event.If online, insert information on how to log in.)<br /><br />
+
+                                                ## Contact information
+                                                Twitter:
+                                                Discord:
+                                                Email:
+                                                Phone: </td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Visibility</td>
+                                            <td>Unlisted </td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Tickets</td>
+                                            <td>No tickets</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Checkout form</td>
+                                            <td>No checkout form</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='left-colmn'>Checkout message
+                                            </td>
+                                            <td> No checkout message</td>
+                                        </tr>
+                                    </table>
+
+
                                 </div>
+                                {/* End Reveiw area  */}
                             </div>
                         </div>
                     </div>

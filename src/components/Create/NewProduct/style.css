@@ -38,12 +38,14 @@
 
 .percent-sign {
     margin-left: -46px !important;
-    margin-top: 15px !important;
+    margin-top: 13px !important;
 }
 
 .input-per {
     border: 1px solid white !important;
+    border-radius: 13px !important;
     font-size: 13px !important;
+    padding: 8px 10px !important;
 }
 
 .title-rev {
@@ -56,8 +58,10 @@
     font-size: 12px;
     word-spacing: 0.2rem !important;
     margin-left: 30px;
-    text-align: right;
-    display: flex;
+    /* text-align: right; */
+    margin-top: 4px;
+    padding-left: 10px;
+
 
 }
 
@@ -67,17 +71,36 @@
 
 .review-in {
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
     flex-direction: row;
 
 }
 
 .review-details {
     margin-top: 20px;
-    width: 300px;
+    /* width: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.review-table {
+    border: none !important;
+    margin-top: 20px;
+    outline: none;
+}
+
+.review-table td,
+.review-table tr,
+.review-table th {
+    border: none !important;
+    outline: none;
+}
+
+/* .left-comn {
+    width: 10% !important;
+} */
 
 .ticket-area {
     display: flex;

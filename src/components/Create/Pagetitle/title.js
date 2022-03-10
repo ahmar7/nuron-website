@@ -8,7 +8,7 @@ const Title = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6 col-12">
-                            <h5 className="title text-center text-md-start">Create a New File</h5>
+                            <h5 className="title text-center text-md-start">Create a New Event</h5>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <ul className="breadcrumb-list">
@@ -18,7 +18,7 @@ const Title = () => {
                                 <li className="separator">
                                     <i className="feather-chevron-right" />
                                 </li>
-                                <li className="item current">Create a New File</li>
+                                <li className="item current">Create a New Event</li>
                             </ul>
                         </div>
                     </div>

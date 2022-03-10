@@ -1,9 +1,19 @@
 import React from 'react';
 import { createrData, propertyData } from '../../../data/CreaterData';
 import FeatherIcon from 'feather-icons-react';
+import QRCode from 'qrcode';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 const Detail = () => {
+    // const [src, setsrc] = useState('Hello World');
+    // let text = "Hello World";
+    // useEffect(() => {
+    //     QRCode.toDataURL(text).then((setsrc));
+    // }, [])
+
+
+
     return (
         <>
 
@@ -14,6 +24,27 @@ const Detail = () => {
                         {/* product image area */}
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="product-tab-wrapper rbt-sticky-top-adjust">
+                                <div className="pd-tab-inner">
+
+                                    <div className="tab-content rn-pd-content" id="v-pills-tabContent">
+                                        <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                            <div className="rn-pd-thumbnail">
+                                                <img src="assets/images/portfolio/lg/portfolio-01.jpg" alt="Nft_Profile" />
+                                            </div>
+                                        </div>
+                                        <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                            <div className="rn-pd-thumbnail">
+                                                <img src="assets/images/portfolio/lg/portfolio-02.jpg" alt="Nft_Profile" />
+                                            </div>
+                                        </div>
+                                        <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                            <div className="rn-pd-thumbnail">
+                                                <img src="assets/images/portfolio/lg/portfolio-03.jpg" alt="Nft_Profile" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
                                 <div className="pd-tab-inner">
 
                                     <div className="tab-content rn-pd-content" id="v-pills-tabContent">
@@ -129,8 +160,7 @@ const Detail = () => {
                                                 {/* single */}
                                                 <div className="rn-pd-bd-wrapper mt--20">
                                                     <div className="top-seller-inner-one">
-                                                        {/* <p class="disc">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                    elit. Doloribus debitis nemo deserunt.</p> */}
+
                                                         <h6 style={{ fontSize: '18px' }} className="name-title">
                                                             Owner
                                                         </h6>
@@ -168,60 +198,47 @@ const Detail = () => {
                                                     {/* single */}
                                                 </div>
                                                 {/* single */}
-                                            </div>
-                                            <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                                {/* single creator */}
-                                                {
-                                                    createrData.map((item, key) => (
-                                                        <div className="top-seller-inner-one">
-                                                            <div className="top-seller-wrapper">
-                                                                <div className="thumbnail">
-                                                                    <a href="#"><img src="assets/images/client/client-4.png" alt="Nft_Profile" /></a>
+                                                <div className="place-bet-area">
+                                                    <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }} className="rn-bet-create">
+
+                                                        <div style={{ textAlign: 'center', justifyContent: 'center', width: '100%', }} className="bid-list left-bid">
+
+                                                            <div className="countdown mt--15" data-date="2022-10-12">
+                                                                <div className="countdown-container days">
+                                                                    <span className="countdown-value">87</span>
+                                                                    <span className="countdown-heading">D's</span>
                                                                 </div>
-                                                                <div className="top-seller-content">
-                                                                    <span>{item.bid} <a href="#">{item.name}</a></span>
-                                                                    <span className="count-number">
-                                                                        {item.time}
-                                                                    </span>
+                                                                <div className="countdown-container hours">
+                                                                    <span className="countdown-value">23</span>
+                                                                    <span className="countdown-heading">H's</span>
+                                                                </div>
+                                                                <div className="countdown-container minutes">
+                                                                    <span className="countdown-value">38</span>
+                                                                    <span className="countdown-heading">Min's</span>
+                                                                </div>
+                                                                <div className="countdown-container seconds">
+                                                                    <span className="countdown-value">27</span>
+                                                                    <span className="countdown-heading">Sec</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    ))
-                                                }
-
-                                                {/* single creator */}
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="place-bet-area">
-                                        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }} className="rn-bet-create">
-
-                                            <div style={{ textAlign: 'center', justifyContent: 'center', width: '100%', }} className="bid-list left-bid">
-
-                                                <div className="countdown mt--15" data-date="2022-10-12">
-                                                    <div className="countdown-container days">
-                                                        <span className="countdown-value">87</span>
-                                                        <span className="countdown-heading">D's</span>
                                                     </div>
-                                                    <div className="countdown-container hours">
-                                                        <span className="countdown-value">23</span>
-                                                        <span className="countdown-heading">H's</span>
-                                                    </div>
-                                                    <div className="countdown-container minutes">
-                                                        <span className="countdown-value">38</span>
-                                                        <span className="countdown-heading">Min's</span>
-                                                    </div>
-                                                    <div className="countdown-container seconds">
-                                                        <span className="countdown-value">27</span>
-                                                        <span className="countdown-heading">Sec</span>
-                                                    </div>
+                                                    {/* <a class="btn btn-primary-alta mt--30" href="#">Place a Bid</a> */}
+                                                    <button type="button" className="btn btn-primary-alta mt--30" data-bs-toggle="modal" data-bs-target="#placebidModal">Purchase</button>
                                                 </div>
                                             </div>
+                                            <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+
+                                                {/* {
+                                                    <button></button> ? <img src={src} /> : ""
+                                                } */}
+
+                                                <div className=' btn-qr'>   <button type="button" className="btn  btn-primary-alta mt--30">QR</button></div>
+                                            </div>
                                         </div>
-                                        {/* <a class="btn btn-primary-alta mt--30" href="#">Place a Bid</a> */}
-                                        <button type="button" className="btn btn-primary-alta mt--30" data-bs-toggle="modal" data-bs-target="#placebidModal">Purchase</button>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

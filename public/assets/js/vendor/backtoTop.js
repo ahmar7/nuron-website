@@ -3,7 +3,7 @@
   o(document).ready(function () {
     var r = document.querySelector(".rn-progress-parent path"),
       n = r.getTotalLength()
-    ;(r.style.transition = r.style.WebkitTransition = "none"), (r.style.strokeDasharray = n + " " + n), (r.style.strokeDashoffset = n), r.getBoundingClientRect(), (r.style.transition = r.style.WebkitTransition = "stroke-dashoffset 10ms linear")
+      ; (r.style.transition = r.style.WebkitTransition = "none"), (r.style.strokeDasharray = n + " " + n), (r.style.strokeDashoffset = n), r.getBoundingClientRect(), (r.style.transition = r.style.WebkitTransition = "stroke-dashoffset 10ms linear")
     function t() {
       var t = o(window).scrollTop(),
         e = o(document).height() - o(window).height()

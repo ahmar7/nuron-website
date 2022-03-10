@@ -34,8 +34,8 @@ const New = () => {
                                 <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                     {/* start personal information */}
                                     <div className='para-edit'>
-                                        < ErrorOutlineIcon />
-                                        <h3>RULES</h3>
+                                        < ErrorOutlineIcon className='warn-icon' />
+                                        RULES
                                     </div>
                                     {/* <div className="nuron-information">
                                         <Box

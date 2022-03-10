@@ -10,6 +10,7 @@
     display: inline;
     margin-left: 10px;
     font-size: 15px !important;
+    font-weight: bold;
 }
 
 .warn-icon {
@@ -21,4 +22,49 @@
     margin-bottom: 2px !important;
     margin-top: 2px !important;
     padding-bottom: 0px !important;
+}
+
+.tags-input {
+    margin-top: 20px;
+}
+
+.tags-input h5 {
+    font-weight: bold;
+    display: inline;
+    margin-left: 10px;
+}
+
+.grid-icon {
+    margin-top: -7px;
+    font-size: 25px !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    border-color: white !important;
+    color: white !important;
+    outline: white !important;
+    width: 100%;
+    padding: 10px 15px !important;
+    border-radius: 15px;
+    width: 100% !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 0 11px !important;
+    width: 100% !important;
+}
+
+.css-1z7n62 span {
+    color: white !important;
+}
+
+.top-basic {
+    margin-top: 30px;
+}
+
+.Input__Label {
+    color: white !important;
+    font-size: 12px !important;
 }

@@ -47,6 +47,16 @@ const New = () => {
                                     <div className='tags-input'>
                                         <TableRowsIcon className='grid-icon' />
                                         <h5>Basic Info</h5>
+
+                                        <div className='top-basic'>
+                                            <TextField className='event-title'
+                                                label="Event Title*"
+                                                value="T"
+                                                InputLabelProps={{ className: 'Input__Label ' }}
+                                            >
+
+                                            </TextField>
+                                        </div>
                                     </div>
                                     {/* <div className="nuron-information">
                                         <Box

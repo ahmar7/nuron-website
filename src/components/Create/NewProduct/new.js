@@ -35,9 +35,7 @@ const New = () => {
                                     <div className="nuron-information">
                                         <Box
                                             component="form"
-                                            sx={{
-                                                '& .MuiTextField-root': { m: 1, width: '25ch' },
-                                            }}
+
                                             noValidate
                                             autoComplete="off"
                                         >

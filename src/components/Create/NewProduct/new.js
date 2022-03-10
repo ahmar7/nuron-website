@@ -4,6 +4,11 @@ import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import TableRowsIcon from '@mui/icons-material/TableRows';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MapIcon from '@mui/icons-material/Map';
+import ImageIcon from '@mui/icons-material/Image';
+import Button from '@mui/material/Button';
+import StickyNote2Icon from '@mui/icons-material/StickyNote2';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 import './style.css'
 const New = () => {
     // const [value, setValue] = React.useState(new Date('start*'));
@@ -84,129 +89,97 @@ const New = () => {
                                         <br />
                                         <div className='phy-btns'>
                                             <button>Physical Event</button>
-                                            <button>Physical Event</button>
-                                            <button>Physical Event</button>
+                                            <button>Virtual Event</button>
+                                            <button>To be Determined</button>
                                         </div>
+                                        <div className='radio-check'>
+                                            <input type="checkbox" checked name="" id="" />
+                                            <p >Show location to attendees only</p>
+                                        </div>
+                                        <div className='top-basic'>
+                                            <h6 className='li-sy'>🔗</h6>
+                                            <TextField className='event-title'
+                                                label="Event Link*"
+                                                autoComplete='off'
+                                                InputLabelProps={{ className: 'Input__Label ' }}
+                                            >
 
+                                            </TextField>
+                                        </div>
+                                        <div className='phy-btns align-btn'>
+                                            <button>Next</button>
+
+                                        </div>
                                     </div>
                                     {/* End personal information */}
                                 </div>
                                 {/* End single tabv content */}
                                 {/* sigle tab content */}
-                                <div className="tab-pane fade" id="nav-homes" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div className="tab-pane tab-pad fade" id="nav-homes" role="tabpanel" aria-labelledby="nav-home-tab">
                                     {/* start personal information */}
-                                    <div className="nuron-information">
-                                        <div className="profile-form-wrapper">
-                                            <div className="input-two-wrapper mb--15">
-                                                <div className="first-name half-wid">
-                                                    <label htmlFor="contact-name" className="form-label">First Name</label>
-                                                    <input name="contact-name" id="contact-name" type="text" defaultValue="Mr." />
-                                                </div>
-                                                <div className="last-name half-wid">
-                                                    <label htmlFor="contact-name-last" className="form-label">Last Name</label>
-                                                    <input name="contact-name" id="contact-name-last" type="text" defaultValue="Sunayra" />
-                                                </div>
-                                            </div>
-                                            <div className="email-area">
-                                                <label htmlFor="Email" className="form-label">Edit Your Email</label>
-                                                <input name="email" id="Email" type="email" defaultValue="example@gmail.com" />
-                                            </div>
+                                    <div className='tags-input '>
+                                        <ImageIcon className='grid-icon' />
+                                        <h5>Banner</h5>
+                                        <Button
+                                            className='upload-btn'
+                                            variant="contained"
+                                            component="label"
+                                        >
+                                            Upload
+                                            <input
+                                                type="file"
+                                                hidden
+                                            />
+                                        </Button>
+                                        <p> Max file size 1MB</p>
+                                    </div>
+                                    <br />
+                                    <div className='tags-input mt-5'>
+                                        <StickyNote2Icon className='grid-icon' />
+                                        <h5>Description</h5>
+
+                                        <div className='date-pick'>
+                                            <p>Event Description (Optional)</p>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
                                         </div>
-                                        {/* edit bio area Start*/}
-                                        <div className="edit-bio-area mt--30">
-                                            <label htmlFor="Discription" className="form-label">Edit Your Bio</label>
-                                            <textarea id="Discription" defaultValue={"Hello, I am Alamin, A Front-end Developer..."} />
+                                    </div>
+                                    <div className='tags-input mt-5'>
+                                        <VisibilityIcon className='grid-icon' />
+                                        <h5>Visibility</h5>
+                                        <br />
+                                        <div className='phy-btns'>
+                                            <button>Public</button>
+                                            <button>Unlisted</button>
+
                                         </div>
-                                        {/* edit bio area End */}
-                                        {/*  */}
-                                        <div className="input-two-wrapepr-prifile">
-                                            {/* start Role area */}
-                                            <div className="role-area mt--15">
-                                                <label htmlFor="Role" className="form-label mb--10">Your Role</label>
-                                                <input name="Role" id="Role" type="text" defaultValue="Front-end Developer" />
-                                            </div>
-                                            {/* End Role area */}
-                                            {/* select gender */}
-                                            <select className="profile-edit-select">
-                                                <option selected>Select Your Gender</option>
-                                                <option value={1}>Male</option>
-                                                <option value={2}>Female</option>
-                                                <option value={3}>Third Gender</option>
-                                            </select>
-                                            {/* end gender */}
+                                        <div className='mt-5 last-o'>
+                                            < ErrorOutlineIcon className='warn-icon ' /> <p>Public events are shown on the explore page, and can be seen by everyone</p>
                                         </div>
-                                        <div className="input-two-wrapper mt--15">
-                                            <div className="half-wid currency">
-                                                {/* select gender */}
-                                                <select className="profile-edit-select">
-                                                    <option selected>Currency</option>
-                                                    <option value={1}>($)USD</option>
-                                                    <option value={2}>wETH</option>
-                                                    <option value={3}>BIT Coin</option>
-                                                </select>
-                                                {/* end gender */}
-                                            </div>
-                                            <div className="half-wid phone-number">
-                                                <label htmlFor="PhoneNumber" className="form-label">Phone Number</label>
-                                                <input name="contact-name" id="PhoneNumber" type="text" defaultValue={+880100000000} />
-                                            </div>
-                                        </div>
-                                        <div className="input-two-wrapper mt--15">
-                                            <div className="half-wid currency">
-                                                {/* select gender */}
-                                                <select className="profile-edit-select">
-                                                    <option selected>Location</option>
-                                                    <option value={1}>United State</option>
-                                                    <option value={2}>Katar</option>
-                                                    <option value={3}>Canada</option>
-                                                </select>
-                                                {/* end gender */}
-                                            </div>
-                                            <div className="half-wid phone-number">
-                                                <label htmlFor="PhoneNumber" className="form-label">Address</label>
-                                                <input name="contact-name" id="PhoneNumber" type="text" defaultValue="USA Cidni" />
-                                            </div>
-                                        </div>
-                                        <div className="button-area save-btn-edit">
-                                            <a href="#" className="btn btn-primary-alta mr--15" onclick="customAlert.alert('Cancel Edit Profile?')">Cancel</a>
-                                            <a href="#" className="btn btn-primary" onclick="customAlert.alert('Successfully Saved Your Profile?')">Save</a>
-                                        </div>
+                                    </div>
+                                    <div className='phy-btns align-btn'>
+                                        <button>Back</button>
+                                        <button>Next</button>
+
                                     </div>
                                     {/* End personal information */}
                                 </div>
                                 {/* End single tabv content */}
-                                <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div className="tab-pane tab-pad fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     {/* change password area Start */}
-                                    <div className="nuron-information">
-                                        <div className="condition">
-                                            <h5 className="title">Create Your Password</h5>
-                                            <p className="condition">
-                                                Passwords are a critical part of information and network security. Passwords
-                                                serve to protect user accounts but a poorly chosen password, if compromised,
-                                                could put the entire network at risk.
-                                            </p>
-                                            <hr />
-                                            <div className="email-area">
-                                                <label htmlFor="Email2" className="form-label">Enter Email</label>
-                                                <input name="email" id="Email2" type="email" defaultValue />
-                                            </div>
-                                        </div>
-                                        <div className="input-two-wrapper mt--15">
-                                            <div className="old-password half-wid">
-                                                <label htmlFor="oldPass" className="form-label">Enter Old Password</label>
-                                                <input name="pass" id="oldPass" type="password" />
-                                            </div>
-                                            <div className="new-password half-wid">
-                                                <label htmlFor="NewPass" className="form-label">Create New Password</label>
-                                                <input name="password" id="NewPass" type="password" />
-                                            </div>
-                                        </div>
-                                        <div className="email-area mt--15">
-                                            <label htmlFor="rePass" className="form-label">Confirm Password</label>
-                                            <input name="Password" id="rePass" type="password" defaultValue />
-                                        </div>
-                                        <a href="#" className="btn btn-primary save-btn-edit" onclick="customAlert.alert('Successfully Changed Password?')">Save</a>
+                                    <div className='tags-input '>
+                                        <LocalActivityIcon className='grid-icon' />
+                                        <h5>Banner</h5>
+                                        <Button
+                                            className='upload-btn'
+                                            variant="contained"
+                                            component="label"
+                                        >
+                                            Add Ticket
+                                        </Button>
                                     </div>
+                                    <div></div>
                                     {/* change password area ENd */}
                                 </div>
                                 <div className="tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">

@@ -1,11 +1,16 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import TableRowsIcon from '@mui/icons-material/TableRows';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import MapIcon from '@mui/icons-material/Map';
 import './style.css'
 const New = () => {
+    // const [value, setValue] = React.useState(new Date('start*'));
+
+    // const handleChange = (newValue) => {
+    //     setValue(newValue);
+    // };
     return (
         <div>
             {/* Start tabs area */}
@@ -49,32 +54,41 @@ const New = () => {
                                         <h5>Basic Info</h5>
 
                                         <div className='top-basic'>
+                                            <h6>T</h6>
                                             <TextField className='event-title'
                                                 label="Event Title*"
-                                                value="T"
+                                                autoComplete='off'
                                                 InputLabelProps={{ className: 'Input__Label ' }}
                                             >
 
                                             </TextField>
                                         </div>
                                     </div>
-                                    {/* <div className="nuron-information">
-                                        <Box
-                                            component="form"
 
-                                            noValidate
-                                            autoComplete="off"
-                                        >
-                                            <div>
-                                                <TextField
-                                                    required
-                                                    label="Required"
-                                                    defaultValue="Hello World"
-                                                />
 
-                                            </div>
-                                        </Box>
-                                    </div> */}
+                                    <div className='tags-input mt-5'>
+                                        <AccessTimeIcon className='grid-icon' />
+                                        <h5>Date & Time</h5>
+                                        <div className='date-pick'>
+                                            <p>Start*</p>
+                                            <input type="date" name="" id="" />
+                                            <p>End*</p>
+                                            <input type="date" name="" id="" />
+
+                                        </div>
+
+                                    </div>
+                                    <div className='tags-input mt-5'>
+                                        <MapIcon className='grid-icon' />
+                                        <h5>Location</h5>
+                                        <br />
+                                        <div className='phy-btns'>
+                                            <button>Physical Event</button>
+                                            <button>Physical Event</button>
+                                            <button>Physical Event</button>
+                                        </div>
+
+                                    </div>
                                     {/* End personal information */}
                                 </div>
                                 {/* End single tabv content */}
